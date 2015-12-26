@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/admin_item_select"
+    tools:ignore="HardcodedText,RtlHardcoded" >
+  
+    
+    <!-- First & Last Name Data -->
+    <TextView
+        android:id="@+id/First_Name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black_txt"
+        android:textSize="19sp"
+        android:textStyle="italic|bold"
+        android:text="First, " />
+
+    <TextView
+        android:id="@+id/Last_Name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/First_Name_txt"
+        android:layout_toRightOf="@id/First_Name_txt"
+        android:layout_marginLeft="6dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black_txt"
+        android:textSize="19sp"
+        android:textStyle="italic|bold"
+        android:text="Last Name" />
+
+    
+    <!-- Character_No.ID Data -->
+    <TextView
+        android:id="@+id/_txtView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/First_Name_txt"
+        android:layout_marginLeft="6dp"
+        android:text="No."
+        android:textColor="@color/black_txt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView 
+        android:id="@+id/CharID_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/First_Name_txt"
+        android:textColor="@color/black_txt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toRightOf="@id/_txtView1"
+        android:layout_marginLeft="3dp"/>
+    
+    
+    
+    <!-- Age: Data -->
+    <TextView
+        android:id="@+id/_txtView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/_txtView1"
+        android:layout_marginLeft="6dp"
+        android:text="Age:"
+        android:textColor="@color/black_txt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/age_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/_txtView2"
+        android:layout_below="@+id/_txtView1"
+        android:textColor="@color/black_txt"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/_txtView2" />
+
+</RelativeLayout>

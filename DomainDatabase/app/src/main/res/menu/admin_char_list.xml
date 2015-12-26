@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.sqlite.DomainCharacterList" >
+    
+    
+    <item 
+        android:id="@+id/search_bar"
+        android:title="@string/action_settings"
+        android:icon="@drawable/admin_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+    
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="200"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sortBy"
+        android:orderInCategory="100"
+        android:title="Sort Characters"
+        app:showAsAction="never" />
+    
+
+</menu>

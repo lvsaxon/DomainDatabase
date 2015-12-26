@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5e5e5e"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    tools:ignore="HardcodedText,RtlHardcoded" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical" >
+
+        <!-- Character Name -->
+        <TextView
+            android:id="@+id/firstname_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- Character_No.ID Data -->
+            <TextView
+                android:id="@+id/_txtView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="No."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/CharID_txt"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_alignBaseline="@id/_txtView1"
+                android:layout_toRightOf="@id/_txtView1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/line"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/_txtView1" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/details_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    
+</LinearLayout>

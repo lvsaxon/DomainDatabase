@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/milkyway" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/domainDB"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <!--<ImageView
+        android:id="@+id/milkyway_galaxy"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/login_milkyway"
+        android:layout_below="@+id/textView2" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/first_name"
+            android:textColor="@color/white" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/firstname_autocomplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/login_cursor_color" />
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:onClick="whenLoggingInOnClick"
+            android:background="@drawable/button_selection"
+            android:text="@string/login"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="whenLoggingInOnClick"
+            android:background="@drawable/button_selection"
+            android:text="@string/register"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/floating_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:foreground="@drawable/admin_item_color_selector"
+        android:elevation="1dp"
+        android:tint="@color/white"
+        android:background="@drawable/oval_btn_shape"
+        android:stateListAnimator="@anim/floating_button_anim"
+        android:src="@android:drawable/ic_input_add"/>
+
+</RelativeLayout>

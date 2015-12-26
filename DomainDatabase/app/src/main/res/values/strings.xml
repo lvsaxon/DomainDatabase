@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Domain</string>
+    <string name="char_list">Domain Character Repository</string>
+    <string name="domainDB">Domain Database</string>
+    <string name="action_settings">Database Analyst Login</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_search">Search Character Name</string>
+    
+    <string name="first_name">First Name</string>
+	<string name="register">Character Register</string>
+	<string name="login">Character Login</string>
+	
+	<string name="last_name">Last Name</string>
+	<string name="age">Age</string>
+	<string name="reg_char">Register Character</string>\
+	
+	<string name="welcome">Welcome, </string>
+	<string name="user">Username</string>
+	<string name="pass">Password</string>
+	
+	<string name="admin_login_name">Character Repository</string>
+    
+	
+    
+</resources>
